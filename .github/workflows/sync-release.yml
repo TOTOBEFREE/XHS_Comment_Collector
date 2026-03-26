@@ -23,41 +23,29 @@ jobs:
         id: version
         shell: bash
         run: |
-          version=$(python - <<'PY'
-from pathlib import Path
-import re
-
-text = Path('xhs_comment_collector.js').read_text(encoding='utf-8')
-match = re.search(r'^// @version\s+(.+)$', text, re.M)
-print(match.group(1).strip() if match else 'unknown')
-PY
-)
+          version=$(python -c "from pathlib import Path; import re; text=Path('xhs_comment_collector.js').read_text(encoding='utf-8'); m=re.search(r'^// @version\s+(.+)$', text, re.M); print(m.group(1).strip() if m else 'unknown')")
           echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Build release notes
-        id: notes
         shell: bash
         run: |
           {
-            echo "body<<EOF"
             echo "## XHS Comment Collector"
             echo
             echo "- Version: ${{ steps.version.outputs.version }}"
             echo "- Install: https://raw.githubusercontent.com/${{ github.repository }}/main/xhs_comment_collector.js"
             echo
             echo "## Recent Changes"
-            git log -10 --pretty=format:'- %s' > recent_changes.txt
-            cat recent_changes.txt
+            git log -10 --pretty=format:'- %s'
             echo
-            echo "EOF"
-          } >> "$GITHUB_OUTPUT"
+          } > release_notes.md
 
       - name: Create or update release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.version.outputs.version }}
           name: v${{ steps.version.outputs.version }}
-          body: ${{ steps.notes.outputs.body }}
+          body_path: release_notes.md
           files: xhs_comment_collector.js
           make_latest: true
           prerelease: false
