@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name XHS_Comment_Collector
-// @version 1.2
-// @description 小红书评论辅助收集脚本，在用户浏览时，通过捕获评论接口，进行评论内容获取，支持二级评论获取
-// @author TOBEFREE
-// @match https://www.xiaohongshu.com/*
-// @run-at document-start
-// @grant none
-// @downloadURL https://github.com/TOTOBEFREE/XHS_Comment_Collector/releases/latest/download/xhs_comment_collector.js
-// @updateURL https://github.com/TOTOBEFREE/XHS_Comment_Collector/releases/latest/download/xhs_comment_collector.js
-// @require https://npm.elemecdn.com/xlsx/dist/xlsx.full.min.js
+// @name         XHS_Comment_Collector
+// @version      1.1
+// @description   小红书评论辅助收集脚本，在用户浏览时，通过捕获评论接口，进行评论内容获取，支持二级评论获取
+// @author       TOBEFREE
+// @match        https://www.xiaohongshu.com/*
+// @run-at       document-start
+// @grant        none
+// @downloadURL  https://github.com/TOTOBEFREE/XHS_Comment_Collector/releases/latest/download/xhs_comment_collector.js
+// @updateURL    https://github.com/TOTOBEFREE/XHS_Comment_Collector/releases/latest/download/xhs_comment_collector.js
+// @require      https://npm.elemecdn.com/xlsx/dist/xlsx.full.min.js
 // ==/UserScript==
 
 
