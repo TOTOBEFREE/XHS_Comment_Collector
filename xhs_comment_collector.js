@@ -6,6 +6,8 @@
 // @match        https://www.xiaohongshu.com/*
 // @run-at       document-start
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/TOTOBEFREE/XHS_Comment_Collector/main/xhs_comment_collector.js
+// @updateURL    https://raw.githubusercontent.com/TOTOBEFREE/XHS_Comment_Collector/main/xhs_comment_collector.js
 // @require      https://npm.elemecdn.com/xlsx/dist/xlsx.full.min.js
 // ==/UserScript==
 
