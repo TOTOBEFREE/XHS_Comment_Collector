@@ -20,10 +20,10 @@
 ## 安装
 
 1. 安装 Tampermonkey、ScriptCat 或其他兼容的用户脚本扩展。
-2. 打开当前仓库脚本文件的 Raw 链接进行安装：`https://raw.githubusercontent.com/TOTOBEFREE/XHS_Comment_Collector/main/xhs_comment_collector.js`
+2. 打开当前仓库最新版本的安装链接：`https://github.com/TOTOBEFREE/XHS_Comment_Collector/releases/latest/download/xhs_comment_collector.js`
 3. 浏览器脚本扩展会自动弹出安装页面，确认安装即可。
 4. 后续仓库更新后，油猴会按扩展自身的检查周期自动检测更新。
-5. 也可以在脚本管理器中手动检查更新，或重新打开同一 Raw 链接覆盖安装。
+5. 也可以在脚本管理器中手动检查更新，或重新打开同一安装链接覆盖安装。
 
 ## 使用
 
