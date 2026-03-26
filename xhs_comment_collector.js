@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         XHS_Comment_Collector_Optimized
+// @name         XHS_Comment_Collector
 // @version      1.0
 // @description   小红书评论辅助收集脚本，在用户浏览时，通过捕获评论接口，进行评论内容获取，支持二级评论获取
 // @author       TOBEFREE
