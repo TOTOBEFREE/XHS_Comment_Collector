@@ -21,15 +21,19 @@
 
 先安装并启用 Tampermonkey、ScriptCat 或其他兼容的用户脚本扩展。
 
-方式1（推荐）：
+**方式1：一键安装（推荐）**
 
 <a href="https://github.com/TOTOBEFREE/XHS_Comment_Collector/releases/latest/download/xhs_comment_collector.user.js">
   <img alt="一键安装脚本" src="docs/install-button.svg" width="336" />
 </a>
 
-方式2：
+**方式2：链接安装**
 
-链接安装：<https://github.com/TOTOBEFREE/XHS_Comment_Collector/releases/latest/download/xhs_comment_collector.user.js>
+复制下面的链接，在脚本插件中选择通过链接安装：
+
+```text
+https://github.com/TOTOBEFREE/XHS_Comment_Collector/releases/latest/download/xhs_comment_collector.user.js
+```
 
 ## 使用
 
