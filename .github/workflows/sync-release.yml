@@ -23,7 +23,7 @@ jobs:
         id: version
         shell: bash
         run: |
-          version=$(python -c "from pathlib import Path; import re; text=Path('xhs_comment_collector.js').read_text(encoding='utf-8'); m=re.search(r'^// @version\s+(.+)$', text, re.M); print(m.group(1).strip() if m else 'unknown')")
+          version=$(python -c "from pathlib import Path; import re; text=Path('xhs_comment_collector.user.js').read_text(encoding='utf-8'); m=re.search(r'^// @version\s+(.+)$', text, re.M); print(m.group(1).strip() if m else 'unknown')")
           echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Build release notes
@@ -33,7 +33,7 @@ jobs:
             echo "## XHS Comment Collector"
             echo
             echo "- Version: ${{ steps.version.outputs.version }}"
-            echo "- Install: https://raw.githubusercontent.com/${{ github.repository }}/main/xhs_comment_collector.js"
+            echo "- Install: https://github.com/${{ github.repository }}/releases/latest/download/xhs_comment_collector.user.js"
             echo
             echo "## Recent Changes"
             git log -10 --pretty=format:'- %s'
@@ -46,7 +46,7 @@ jobs:
           tag_name: v${{ steps.version.outputs.version }}
           name: v${{ steps.version.outputs.version }}
           body_path: release_notes.md
-          files: xhs_comment_collector.js
+          files: xhs_comment_collector.user.js
           make_latest: true
           prerelease: false
           draft: false

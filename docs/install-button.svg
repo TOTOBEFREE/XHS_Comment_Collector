@@ -1,0 +1,33 @@
+<svg width="336" height="84" viewBox="0 0 336 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="26" y1="16" x2="308" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF9FA" />
+      <stop offset="1" stop-color="#FFECEF" />
+    </linearGradient>
+    <linearGradient id="shine" x1="34" y1="12" x2="156" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.92" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <filter id="shadow" x="8" y="8" width="320" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#E9C4CC" flood-opacity="0.38" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="14" y="14" width="308" height="56" rx="16" fill="url(#bg)" stroke="#F1D3D9" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.985;1;0.985" dur="3.6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="16" y="16" width="130" height="24" rx="12" fill="url(#shine)" opacity="0.65">
+      <animate attributeName="x" values="16;48;16" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.35;0.65;0.35" dur="4.5s" repeatCount="indefinite" />
+    </rect>
+    <rect x="34" y="30" width="30" height="24" rx="8" fill="#FFF1F4" stroke="#F5DADF" />
+    <path d="M49 36.5V47.5" stroke="#C98A99" stroke-width="2" stroke-linecap="round" />
+    <path d="M43.5 42H54.5" stroke="#C98A99" stroke-width="2" stroke-linecap="round" />
+    <text x="82" y="38.5" fill="#875564" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700">一键安装脚本</text>
+    <text x="82" y="56.5" fill="#B0818D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="600">XHS Comment Collector</text>
+    <rect x="246" y="27" width="54" height="30" rx="11" fill="#FCE1E6" stroke="#EFC8D0" />
+    <text x="273" y="46" text-anchor="middle" fill="#9B5E6E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700">v1.1</text>
+    <rect x="14.6" y="14.6" width="306.8" height="54.8" rx="15.4" stroke="#FFFFFF" stroke-opacity="0.55" />
+  </g>
+</svg>
